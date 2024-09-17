@@ -97,12 +97,5 @@ in {
         };
       };
     }
-
-    {
-      # Add startup commands here
-      services.sway.startupCommands = [
-        "mpvpaper -vs -o \"no-audio loop\" \"*\" ~/Videos/dog_dog_resized.mp4 &"
-      ];
-    }
   ];
 }
