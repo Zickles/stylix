@@ -54,7 +54,8 @@ in {
           };
         };
 
-        output."*".bg = "${config.stylix.image} ${config.stylix.imageScalingMode}";
+        //output."*".bg = "${config.stylix.image} ${config.stylix.imageScalingMode}";
+        exec mpvpaper -vs -o "no-audio loop" "*" ~/Videos/dog_dog_resized.mp4 &
 
         seat."*" = {
           xcursor_theme = "${config.stylix.cursor.name} ${toString config.stylix.cursor.size}";
